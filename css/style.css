@@ -30,14 +30,7 @@ body{
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-image: none;
-        background-color: var(--color4);
-    }
-}
-
-.overflow{
+.overflow-hidden{
     overflow-y: visible;
 }
 
@@ -344,7 +337,7 @@ h1,h2, h3, p ,a {
         background-color: var(--color4);
         display: flex;
         flex-direction: column-reverse;
-        
+
     }
     
     .aboutme__img{
@@ -363,7 +356,7 @@ h1,h2, h3, p ,a {
         position: relative;
         background-color: var(--color5);
         width: 100vw;
-        height: 100vh;
+        height: 100vw;
     }
     
     .aboutme__img-container {
@@ -398,6 +391,7 @@ h1,h2, h3, p ,a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    align-items: start;
 }
 
 @media (max-width: 768px) {
@@ -615,8 +609,10 @@ h1,h2, h3, p ,a {
 
     .skills-text-pages{
         display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
         align-items: center;
-        text-align: center;
+        width: 100vw; 
     }
 
     .lenguajes,
@@ -627,6 +623,8 @@ h1,h2, h3, p ,a {
         max-width: 15rem;
         max-height: 15rem;
     }
+
+    
 }
 
 

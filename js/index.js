@@ -5,10 +5,9 @@ let sectionButton = document.getElementById("section-button");
 let ship = document.getElementById("ship");
 let close = document.getElementById("close");
 let closeBg = document.getElementById("close-bg");
-let aboutme = document.getElementById("aboutme");
 let returnBt = document.getElementById("return");
 let body = document.getElementById("body");
-
+let sections = document.getElementById("sections")
 
 
 sectionButton.onmouseup = function() {
@@ -17,13 +16,13 @@ sectionButton.onmouseup = function() {
     setTimeout(() => {
         HOMEpage.classList.toggle("hidden");
         HOMEbutton.classList.toggle("hidden");
-        
+        sections.classList.toggle("hidden");
         returnBt.classList.toggle("hidden");
     }, 2000);
     setTimeout(() => {
         ship.classList.toggle("fly");
         close.classList.toggle("close-animation"); 
-        body.classList.toggle("overflow");
+        body.classList.toggle("overflow-hidden");
         closeBg.classList.toggle("hidden");
     },4000);
 }
@@ -31,14 +30,13 @@ sectionButton.onmouseup = function() {
 returnBt.onmouseup = function() {
     ship.classList.toggle("fly");
     close.classList.toggle("close-animation"); 
-    body.classList.toggle("overflow");
+    body.classList.toggle("overflow-hidden");
     closeBg.classList.toggle("hidden");
     returnBt.classList.toggle("hidden");
     setTimeout(() => {
         HOMEpage.classList.toggle("hidden");
         HOMEbutton.classList.toggle("hidden");
-        aboutme.classList.toggle("hidden");
-        
+        sections.classList.toggle("hidden");
     }, 2000);
     setTimeout(() => {
         ship.classList.toggle("fly");

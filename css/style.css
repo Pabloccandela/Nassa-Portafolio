@@ -30,6 +30,13 @@ body{
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: var(--color4);
+    }
+}
+
 .overflow{
     overflow-y: visible;
 }
@@ -279,7 +286,6 @@ h1,h2, h3, p ,a {
     grid-template-rows: auto auto ;
     align-items: center;
     justify-items: center;
-    overflow-y: auto;
 }
 
 .aboutme__content::-webkit-scrollbar{
@@ -336,20 +342,49 @@ h1,h2, h3, p ,a {
         width: auto;
         height: auto;
         background-color: var(--color4);
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
     }
     
     .aboutme__img{
-        display: none;
+        display: block;
     }
     
     .aboutme__content {
-        margin: 0 4rem;
-        padding-top: 8rem;
+        margin: 8rem 4rem 4rem 4rem;
         display: grid;
         grid-template-rows: auto auto ;
         align-items: center;
         justify-items: center;
+    }
+
+    .aboutme__img{
+        position: relative;
+        background-color: var(--color5);
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .aboutme__img-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 80%;
+        background-image: url(../img/foto2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 5rem;
+        box-shadow: 1.5rem 1.5rem 2rem .1rem;
+    }
+    
+    .aboutme__img-desing{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color2);
+        border-radius: 0 100% 0 0 ;
     }
 }
 
@@ -357,15 +392,21 @@ h1,h2, h3, p ,a {
 /*SKILLS*/
 
 .skills{
-    background-color: var(--color6);
     height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    position: relative;
 }
 
+@media (max-width: 768px) {
+    .skills{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        height:auto;
+        width: 100%;
+    }
+}
 
 .skills-text{
     display: flex;
@@ -373,10 +414,18 @@ h1,h2, h3, p ,a {
     align-items: flex-start;
     justify-content: center;
     background-color: var(--color4);
-    width: 100%;
+    width: 50vw;
     height: 100vh;
-
 }
+
+@media (max-width: 768px) {
+    
+    .skills-text{
+        width:100vw;
+        height: auto;
+    }
+}
+
 
 .skills-text h2{
     padding: 2rem 3rem;
@@ -395,11 +444,8 @@ h1,h2, h3, p ,a {
 .skills-text-pages{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    margin-left: 3rem;
-    
 }
 
 .nassafx{
@@ -407,8 +453,8 @@ h1,h2, h3, p ,a {
     background-image: url(../img/nassafx.jpg);
     background-position: center;
     background-size: cover;
-    width: 15rem;
-    height: 15rem;
+    width: 11vw;
+    height: 11vw;
     border-radius:3rem;
     position: relative;
     box-shadow: 1rem 1rem 3rem .2rem #000;
@@ -464,8 +510,8 @@ h1,h2, h3, p ,a {
     background-image: url(../img/mundotarjeta.jpg);
     background-position: center;
     background-size: cover;
-    width: 15rem;
-    height: 15rem;
+    width: 11vw;
+    height: 11vw;
     border-radius:3rem;
     position: relative;
     box-shadow: 1rem 1rem 3rem .2rem #000;
@@ -522,8 +568,8 @@ h1,h2, h3, p ,a {
     background-image: url(../img/lenguajes.jpg);
     background-position: center;
     background-size: cover;
-    width: 15rem;
-    height: 15rem;
+    width: 11vw;
+    height: 11vw;
     border-radius:3rem;
     position: relative;
     box-shadow: 1rem 1rem 3rem .2rem #000;
@@ -564,14 +610,41 @@ h1,h2, h3, p ,a {
     opacity: 1;
 }
 
+@media (max-width: 768px){
+
+    .skills-text-pages{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lenguajes,
+    .mundotarjeta,
+    .nassafx{
+        width:50vw;
+        height: 50vw;
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+}
+
 
 .skills__leng{
+    background-color: var(--color6);
     display:grid;
     grid-template-rows: repeat(4,1fr);
     justify-content: center;
     justify-items: flex-start;
-    align-items:center;
-    row-gap: 2rem;
+    width: 50vw;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+
+    .skills__leng{
+        width: 100vw;
+    }
+    
 }
 
 .skills__leng-python{

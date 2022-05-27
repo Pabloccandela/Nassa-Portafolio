@@ -196,14 +196,13 @@ h1,h2, h3, p ,a {
 
 .section__ship{
     display: grid;
-    grid-template-rows: auto 4rem;
+    grid-template-rows: auto auto;
     row-gap: 1rem;
-    align-items: flex-start;
     text-align: center;
     position: absolute;
     bottom: -50vh;
-    left: 50%;
-    transform: translate(-50%);
+    left: 48%;
+
     transition: bottom .6s;
     z-index: 51;
 }

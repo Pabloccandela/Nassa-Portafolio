@@ -298,10 +298,30 @@ h1,h2, h3, p ,a {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@media (max-width: 440px) {
+    .aboutme__content-text h2{
+        font-size: 10vw;
+    }
+}
+
 .aboutme__content-text h2 i{
     font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.aboutme__content a{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color4);
+    background-color: var(--color2);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+
+    margin-top: 3rem;
 }
 
 .aboutme__content-text p:nth-child(3){
@@ -429,6 +449,12 @@ h1,h2, h3, p ,a {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--color2);
+}
+
+@media (max-width: 440px) {
+    .skills-text h2{
+        font-size: 10vw;
+    }
 }
 
 .skills-text p{

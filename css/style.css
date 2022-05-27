@@ -344,6 +344,7 @@ h1,h2, h3, p ,a {
         background-color: var(--color4);
         display: flex;
         flex-direction: column-reverse;
+        
     }
     
     .aboutme__img{

@@ -1,0 +1,14 @@
+body{
+    background-image: url(../img/wallpeaper.jpg);
+    background-position: center;
+    margin: 0;
+
+}
+
+.form{
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

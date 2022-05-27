@@ -45,5 +45,25 @@ returnBt.onmouseup = function() {
     },4000);
 }
 
+let whatsapp = document.getElementById("social-whatsapp");
+let instagram = document.getElementById("social-instagram");
+let linkedin = document.getElementById("social-linkedin");
+let gmail = document.getElementById("social-gmail");
 
+whatsapp.onmouseup = function() {
+    window.open("https://api.whatsapp.com/send?phone=543364540036&text=Buenas%20Nassa!!%20...", '_blank');
+};
 
+instagram.onmouseup = function() {
+    window.open( "https://www.instagram.com/pabloccandela/", '_blank');
+};
+
+linkedin.onmouseup = function() {
+    window.open ("https://www.linkedin.com/in/pablo-candela-medina-241418214/", '_blank');
+};
+
+const correo = "Correo: pabloccandela@gmail.com";
+
+gmail.onmouseup = function() {
+    alert(correo);
+}

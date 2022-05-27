@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/form.css" as="Style">
+    <link rel="preload" href="css/form.css" as="Style">
     <link rel="stylesheet" href="css/form.css">
+
+    <link rel="preload" href="css/normalize.css" as="Style">
+    <link rel="stylesheet" href="css/normalize.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +24,29 @@
 
     <script src="https://kit.fontawesome.com/1c41280639.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <for class="form">
-        <h2>Contacto</h2>
-        <p type="Nombre:"><input type="text" placeholder="Coloque su Nombre y apellido..."></p>
-        <p type="Email:"><input type="email" placeholder="Coloque su Email..."></p>
-        <p type="Mensaje>:"><input type="email" placeholder="Coloque su Mensaje..."></p>
+    <div class="bg">
+        <form class="form">
+            <h2>Contacto</h2>
+            <p>Nombre y Apellido</p>
+            <input type="text" maxlength="30" placeholder="Coloque su Nombre y apellido...">
+            <p>Correo</p>
+            <input type="email" placeholder="Coloque su Email...">
+            <p>Mensaje</p>
+            <input type="text" placeholder="Coloque su Mensaje...">
+            <button id="form" type="submit">
+                Enviar
+            </button>
 
-        <button>
-            Enviar
-        </button>
+        </form>
+    </div>
 
-        <div>
-            <span class="fa fa-phone">+54 93364540033</span>
-            <span class="fa fa-envelope-o">pabloccandela@gmail.com</span>
-        </div>
-        </p>
-    </for>
+    <!--FOOTER-->
+    <footer class="footer">
+        <p>© 2022 NASSA</p>
+    </footer>
+
+    <script src="js/form.js"></script>
 </body>
 </html>

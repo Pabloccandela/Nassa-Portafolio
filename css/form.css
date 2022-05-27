@@ -1,14 +1,134 @@
+:root{
+    --color1: #121b2c;
+    --color2: rgb(255, 0, 85);
+    --color3: rgb(104, 0, 48);
+    --color4: #ffffff;
+    --color5: #111111;
+    --color6: #252628;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
 body{
+    font-size: 16px;
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
     background-image: url(../img/wallpeaper.jpg);
     background-position: center;
-    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
 
+.bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(.4rem);
 }
 
 .form{
-    background-color: #fff;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: var(--color6);
+    width: 40rem;
+    border-radius: 3rem;
+    color: var(--color4);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.form h2 {
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color4);
+    background-color: var(--color2);
+    padding: 1rem 2rem;
+    margin: 3rem 0;
+    border-radius: 3rem 3rem 1rem 1rem;
+}
+
+.form p{
+    margin: 0;
+    font-size:2rem;
+}
+
+.form input {
+    outline: none;
+    width: 80%;
+    border: none;
+    background-color: var(--color5);
+    border-radius: 3rem;
+    padding: 1rem 1rem;
+    margin: 1rem 3rem;
+    color: var(--color4);
+}
+
+
+.form button {
+    width: 50%;
+    background: none;
+    border: none;
+    color: var(--color4);
+    font-weight: bold;
+    border-radius: 3rem;
+    padding: .6rem;
+    margin:3rem;
+    border: .3rem solid var(--color2);
+}
+
+.form button:hover{
+    background-color: var(--color2);
+}
+
+.bg div{
+    position: absolute;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 440px) {
+    .form{
+        border-radius: 0;
+        width:100vw;
+        height: 100vh;
+    }
+
+    .form h2{
+        font-size: 4rem;
+    }
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:100vw;
+    z-index: 60;
+    background-color: var(--color1);
+}
+
+.footer p{
+    padding: .6rem;
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: 600;
+    color: var(--color4);
+    margin: 0;
 }

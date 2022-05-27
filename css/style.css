@@ -320,8 +320,14 @@ h1,h2, h3, p ,a {
     background-color: var(--color2);
     padding: 1rem 2rem;
     border-radius: 3rem;
-
     margin-top: 3rem;
+}
+
+@media (max-width: 350px ) {
+    .aboutme__content a{
+        font-size: 1.5rem;
+    }
+    
 }
 
 .aboutme__content-text p:nth-child(3){
@@ -585,55 +591,17 @@ h1,h2, h3, p ,a {
     opacity: 1;
 }
 
-
-.lenguajes{
-    margin: 3rem;
-    background-image: url(../img/lenguajes.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 11vw;
-    height: 11vw;
-    border-radius:3rem;
-    position: relative;
-    box-shadow: 1rem 1rem 3rem .2rem #000;
-    
+@media (max-width:768px ) {
+    .mundotarjeta,
+    .nassafx{
+        width:50vw;
+        height: 50vw;
+        max-width: 15rem;
+        max-height: 15rem;
+    }
 }
 
-.lenguajes-icon{
-    background-color: rgba(0, 0, 0, .0);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    border-radius: 3rem;
-    cursor: pointer;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.lenguajes-icon:hover{
-    visibility: visible;
-    background-color: rgba(0, 0, 0, .7);
-    transition: all 1s;
-}
-
-.lenguajes-icon p{
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--color4);
-    font-size: 1.8rem;
-    opacity: 0;
-    transition: all 1s;
-    text-align: center;
-}
-
-.lenguajes-icon:hover > p{
-    opacity: 1;
-}
-
-@media (max-width: 768px){
+@media (max-width: 440px){
 
     .skills-text-pages{
         display: flex;
@@ -643,7 +611,6 @@ h1,h2, h3, p ,a {
         width: 100vw; 
     }
 
-    .lenguajes,
     .mundotarjeta,
     .nassafx{
         width:50vw;

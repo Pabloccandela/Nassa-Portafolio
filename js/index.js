@@ -8,8 +8,7 @@ let closeBg = document.getElementById("close-bg");
 let returnBt = document.getElementById("return");
 let body = document.getElementById("body");
 let sections = document.getElementById("sections");
-let nassafx = document.getElementById("nassafx");
-let mundotarjeta = document.getElementById("mundotarjeta");
+
 
 sectionButton.onmouseup = function() {
     ship.classList.toggle("fly");
@@ -67,3 +66,14 @@ const correo = "Correo: pabloccandela@gmail.com";
 gmail.onmouseup = function() {
     alert(correo);
 }
+
+
+let nassafx = document.getElementById("nassafx");
+let mundotarjeta = document.getElementById("mundotarjeta");
+
+nassafx.onmouseup = function() {
+    window.open ("https://www.instagram.com/nassafx/", '_blank');
+};
+mundotarjeta.onmouseup = function() {
+    window.open ("https://www.instagram.com/mundotarjeta.sn/", '_blank');
+};

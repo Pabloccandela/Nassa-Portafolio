@@ -30,6 +30,15 @@ body{
     overflow: hidden;
 }
 
+body::-webkit-scrollbar{
+    width: 1rem;
+    background-color: var(--color1);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color2);
+    border-radius: 1rem;
+}
+
 .overflow-hidden{
     overflow-y: visible;
     overflow-x: hidden;
@@ -438,6 +447,7 @@ h1,h2, h3, p ,a {
     background-color: var(--color4);
     width: 50vw;
     height: 100vh;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -475,10 +485,13 @@ h1,h2, h3, p ,a {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
 }
 
 .nassafx{
-    margin: 3rem;
     background-image: url(../img/nassafx.jpg);
     background-position: center;
     background-size: cover;
@@ -487,6 +500,7 @@ h1,h2, h3, p ,a {
     border-radius:3rem;
     position: relative;
     box-shadow: 1rem 1rem 3rem .2rem #000;
+    margin-right: 1.5rem;
 }
 
 .nassafx-icon{
@@ -499,40 +513,16 @@ h1,h2, h3, p ,a {
     cursor: pointer;
 }
 
-.nassafx-icon:hover{
-    visibility: visible;
-    background-color: rgba(0, 0, 0, .7);
-    transition: all 1s;
-}
-
 .nassafx-icon i{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 6rem;
+    font-size: 3vw;
     transform: translate(-50%,-50%);
     opacity: .0;
-    transition: all 1s;
+    transition: all .5s;
 }
 
-.nassafx-icon:hover > i{
-    opacity: 1;
-}
-
-.nassafx-icon p{
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    color: var(--color4);
-    font-size: 2rem;
-    opacity: 0;
-    transition: all 1s;
-}
-
-.nassafx-icon:hover > p{
-    opacity: 1;
-}
 
 
 .mundotarjeta{
@@ -544,6 +534,7 @@ h1,h2, h3, p ,a {
     border-radius:3rem;
     position: relative;
     box-shadow: 1rem 1rem 3rem .2rem #000;
+    margin-left: 1.5rem;
 }
 
 .mundotarjeta-icon{
@@ -556,39 +547,36 @@ h1,h2, h3, p ,a {
     cursor: pointer;
 }
 
-.mundotarjeta-icon:hover{
-    visibility: visible;
-    background-color: rgba(0, 0, 0, .7);
-    transition: all 1s;
-}
 
 .mundotarjeta-icon i{
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    font-size: 6rem;
+    font-size: 3vw;
     transform: translate(-50%,-50%);
     opacity: .0;
-    transition: all 1s;
+    transition: all .5s;
 }
 
-.mundotarjeta-icon:hover > i{
-    opacity: 1;
-}
 
-.mundotarjeta-icon p{
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    color: var(--color4);
-    font-size: 2rem;
-    opacity: 0;
-    transition: all 1s;
-}
 
-.mundotarjeta-icon:hover > p{
-    opacity: 1;
+@media (min-width: 768px) {
+    .nassafx-icon:hover > i{
+        opacity: 1;
+    }
+    .mundotarjeta-icon:hover > i{
+        opacity: 1;
+    }
+    .mundotarjeta-icon:hover{
+        visibility: visible;
+        background-color: rgba(0, 0, 0, .7);
+        transition: all 1s;
+    }
+    .nassafx-icon:hover{
+        visibility: visible;
+        background-color: rgba(0, 0, 0, .7);
+        transition: all 1s;
+    }  
 }
 
 @media (max-width:768px ) {
@@ -598,6 +586,15 @@ h1,h2, h3, p ,a {
         height: 50vw;
         max-width: 15rem;
         max-height: 15rem;
+        margin: 0;
+    }
+
+    .mundotarjeta{
+        margin-top: 1.5rem;
+    }
+
+    .nassafx{
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -920,7 +917,6 @@ h1,h2, h3, p ,a {
     .contact{
         height: auto;
         width: 100vw;
-    
         background-color: var(--color4);
     }
     
@@ -956,6 +952,28 @@ h1,h2, h3, p ,a {
         font-size: 2rem;
         text-align: center;
     }
+}
+
+.form{
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.form-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border: .5rem solid var(--color2);
+    color: var(--color2); 
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    transition: all 1s;
+}
+
+.form-link:hover{
+    background-color: var(--color2);
+    color: var(--color4);
 }
 
 /*FOOTER*/

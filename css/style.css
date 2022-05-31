@@ -454,7 +454,8 @@ h1,h2, h3, p ,a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: var(--color4);
+    background: rgb(18,27,44);
+    background: linear-gradient(0deg, rgba(18,27,44,1) 0%, rgba(255,255,255,1) 15%);
     width: 50vw;
     height: 100vh;
     position: relative;
@@ -493,6 +494,7 @@ h1,h2, h3, p ,a {
 .skills-text-pages{
     display: flex;
     flex-direction: row;
+    gap: 4rem;
     align-items: center;
     text-align: center;
     position: relative;
@@ -500,6 +502,8 @@ h1,h2, h3, p ,a {
     transform: translateX(-50%);
     margin-top: 3rem;
 }
+
+
 
 .nassafx{
     background-image: url(../img/nassafx.jpg);

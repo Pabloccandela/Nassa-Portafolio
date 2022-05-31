@@ -77,3 +77,4 @@ nassafx.onmouseup = function() {
 mundotarjeta.onmouseup = function() {
     window.open ("https://www.instagram.com/mundotarjeta.sn/", '_blank');
 };
+

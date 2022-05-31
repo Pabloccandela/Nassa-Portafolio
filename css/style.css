@@ -264,7 +264,8 @@ h1,h2, h3, p ,a {
 
 .aboutme__img{
     position: relative;
-    background-color: var(--color5);
+    background: rgb(255,0,69);
+    background: linear-gradient(90deg, rgba(255,0,69,1) 0%, rgba(6,6,66,1) 56%, rgba(2,0,36,1) 79%, rgba(2,0,36,1) 79%);
     width: 50vw;
     height: 100vh;
 }
@@ -289,6 +290,7 @@ h1,h2, h3, p ,a {
     height: 100%;
     background-color: var(--color2);
     border-radius: 0 100% 0 0 ;
+    opacity: .2;
 }
 
 .aboutme__content {
